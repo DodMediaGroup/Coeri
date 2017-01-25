@@ -1,0 +1,131 @@
+.section-about{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	.description-about{
+		position: relative;
+		width: 100%;
+		margin-top: 50px;
+		background: linear-gradient(to right, @color-white, @color-gray);
+		h4{
+			padding: 0 0 0 10%;
+			color: @color-purple;
+			font-size: 50px;
+			font-weight: 100;
+			margin: 30px 0;
+			line-height: 1em;
+			.responsive(@screen-md,{
+				font-size: 40px;
+				});
+			.responsive(@screen-sm,{
+				font-size: 30px;
+				});
+			.responsive(@screen-xs,{
+				font-size: 25px;
+				});
+		}
+		strong{
+			font-weight: bold;
+		}
+		img{
+			position: absolute;
+		    padding: 0;
+		    margin: 0;
+		    bottom: 0;
+		    right: 0;
+		}
+	}
+	.services{
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 50px;
+		.title-service{
+			h3{
+				color: @color-yellow;
+				span{
+					color: @color-gray-dark;
+					font-weight: 500;
+				}
+				.responsive(@screen-sm,{
+					font-size: 22px;
+					});
+				.responsive(@screen-xs,{
+					font-size: 18px;
+					});
+			}
+		}
+		.items-service{
+			padding: 50px 10%;
+			svg{
+				height: 120px;
+				width: auto;
+				path{
+					transition: all .4s;
+					fill: @color-purple;
+				}
+			}
+			svg:hover{
+				path{
+					opacity: .6;
+				}
+			}
+			h5{
+				font-size: 18pt;
+				height: 30px;
+				color: @color-purple;
+				font-weight: 100;
+				margin: 10px 0;
+				line-height: 1em;
+				opacity: .85;
+				strong{
+					font-weight: bold;
+				}
+			}
+			p{
+				margin-top: 30px;
+			    font-weight: 100;
+			    line-height: 1.1em;
+			}
+		}
+	}
+	.items-org{
+		margin-bottom: 50px;
+		padding: 0 10%;
+		background: linear-gradient(to right, @color-white, @color-gray);
+		.item:first-child{
+			padding-right: 30px;
+			.responsive(@screen-sm,{
+				padding-right: 0px;
+				});
+		}
+		.item:last-child{
+			padding-left: 30px;
+			.responsive(@screen-sm,{
+				padding-left: 0px;
+				});
+		}
+		.item{
+			.title-org{
+				margin-top: 30px;
+				svg{
+					height: 35px;
+					path{
+						fill: @color-purple;
+					}
+				}
+				h4{
+					font-size: 19pt;
+					font-weight: bold;
+					color: @color-purple;
+					margin: 0;
+				}
+			}
+			p{
+				text-align: justify;
+				line-height: 1.1em;
+				font-weight: 100;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.btn-up{
+	svg{
+		display: none;
+	}
+}
+.btn-back{
+    height: 50px;
+    width: 50px;
+    right: 20px;
+    bottom: 12px;
+    position: fixed;
+    cursor: pointer;
+    svg{
+    	display: block !important;
+    	path{
+    		transition: all .3s;
+    		fill: @color-purple;
+    	}
+    }
+    svg:hover{
+    	path{
+    		opacity: .6;
+    	}
+    }
+}

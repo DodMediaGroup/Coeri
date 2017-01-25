@@ -1,0 +1,112 @@
+footer{
+	padding: 0 10% 30px 10%;
+	background-color: @color-yellow;
+	width: 100%;
+	.logo-footer{
+		img{
+			height: 150px;
+			width: auto;
+			.responsive(@screen-sm,{
+				margin-top: 20px;
+				});
+		}
+	}
+	.contact-data{
+		color: @color-purple;
+		line-height: 1em;
+		margin: 0;
+		h5{
+			font-size: 25px;
+			font-weight: bold;
+			margin-bottom: 25px;
+			margin-left: -80px;
+		}
+		p{
+			font-size: 14px;
+			text-align: left;
+			font-weight: bold;
+			line-height: 1em;
+			margin-left: 50px;
+		}
+		svg{
+			height: 35px;
+			path{
+				transition: all .6s;
+			}
+
+		}
+		a:first-child{
+			margin-left: 40px;
+		}
+		.twitter{
+		svg:hover{
+			path{
+				fill: #55acee;
+				}
+			}
+		}
+		.face{
+		svg:hover{
+			path{
+				fill: #3b5998;
+				}
+			}
+		}
+		.responsive(@screen-sm,{
+			text-align: center;
+			justify-content: center;
+				h5{
+					margin-left: 0;
+				}
+				p{
+					text-align: center;
+					margin-left: 0;
+				}
+				.icon-social{
+					justify-content: center;
+				    text-align: center;
+				    a{
+				    	margin: 0;
+				    }
+				}
+			});
+	}
+	.form{
+		.responsive(@screen-sm,{
+			margin-bottom: 20px;
+			});
+		form{
+			input{
+				outline:0px;
+				border: none;
+				margin-top: 15px;
+				padding: 5px;
+				font-size: 16px;
+				width: 100%;
+			}
+			textarea{
+				padding: 5px;
+				font-size: 16px;
+				outline: 0px;
+				border: none;
+			    margin-left: 0px;
+			    margin-top: 15px;
+			    height: 75px;
+			    width: 100%;
+			}
+			button{
+				border: none;
+				background-color: @color-purple;
+				color: #fff;
+				font-size: 16px;
+				padding: 5px 12px;
+				margin-top: 95px;
+   				position: absolute;
+			    outline: 0;
+			    right: 10%;
+    			margin-right: 15px;
+
+			}
+		}
+	}
+}

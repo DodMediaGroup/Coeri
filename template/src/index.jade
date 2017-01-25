@@ -1,0 +1,125 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width")
+        title Coeri
+        link(rel="shortcut icon",href="images/favicon.ico",type="image/x-icon")
+        link(rel="icon",href="images/favicon.ico",type="image/x-icon")
+        link(href="vendor/normalize.css" rel="stylesheet")
+        link(href="vendor/flexboxgrid.min.css" rel="stylesheet")
+        link(href="vendor/fractionslider/fractionslider.css",rel="stylesheet")
+        link(href="css/main.css" rel="stylesheet")
+        script(src="vendor/jquery.min.js")
+    body
+        section.limiter-container#head
+            header.content-header
+                div.row.center-xs.top-xs
+                    img.col-xs-12.logo(src="images/logo__coeri.svg")
+                nav.menu
+                    ul
+                        li
+                            button(onclick="$('#about').animatescroll({scrollSpeed:2000});") NOSOTROS
+                        li 
+                            button(onclick="$('#projects').animatescroll({scrollSpeed:2000});") PROYECTOS
+                        li 
+                           button(onclick="$('#contact').animatescroll({scrollSpeed:2000});") CONTACTO
+            div.row.start-xs.section-about
+                div.title.col-xs-12.col-sm-5.row.middle-xs.end-xs#about
+                    img.to-svg(src="images/home.svg")
+                    h2 NOSOTROS
+                div.description-about.row.middle-xs
+                    h4.col-xs-9 SOMOS UNA EMPRESA BOYACENSE </br>
+                        strong ENCARGADA DE GESTIONAR PROYECTOS INMOBILIARIOS </br>
+                        | CON CALIDAD Y ÉXITO
+                    img.col-xs-3(src="images/image-degrade.png")
+                div.services.row.center-xs
+                    div.title-service.col-xs-12
+                        h3 / / / 
+                            span ¿ Qué servicios prestamos ? 
+                            | / / /
+                    div.items-service.row.center-xs
+                        div.col-xs-12.col-sm-4
+                            img.to-svg(src="images/inmobiliaria.svg")
+                            h5 PROMOTORA </br>
+                                strong INMOBILIARIA
+                            p Elaboración, promoción, planeación y ejecución de proyectos de construcción inmobiliaria. 
+                        div.col-xs-12.col-sm-4
+                            img.to-svg(src="images/consultoria.svg")
+                            h5 
+                                strong CONSULTORÍA
+                            p Prestación de servicios de construcción, Interventoría y consultoría de obras civiles,  tanto en el sector público como privado.
+                        div.col-xs-12.col-sm-4
+                            img.to-svg(src="images/lupa.svg")
+                            h5 
+                                strong CONTROL DE CALIDAD
+                            p Control de calidad en obras civiles, laboratorio de suelos, concretos y pavimentos.
+                div.items-org.row.between-xs
+                    div.item.col-xs-12.col-sm-6
+                        div.title-org.row.middle-xs
+                            img.to-svg(src="images/icon-check.svg")
+                            h4 MISIÓN
+                        p Desarrollar proyectos inmobiliarios y de ingeniería, con soporte en métodos financieros innovadores, que faciliten la viabilidad financiera de los proyectos y permitan ofrecer alternativas de negocio llamativas para el público maximizando el rendimiento, a través de un excelente grupo de trabajo técnico y profesional
+                    div.item.col-xs-12.col-sm-6
+                        div.title-org.row.middle-xs
+                            img.to-svg(src="images/icon-check.svg")
+                            h4 VISIÓN
+                        p En el 2018 ser una empresa reconocida competitivamente en el mercado, por su seriedad, excelencia, ética, servicio, crecimiento sostenible y por ofrecer llamativas alternativas de negocio, gracias al desarrollo de proyectos innovadores, con altos estándares de calidad y un desarrollo conjunto de métodos financieros, así como garantizando el acompañamiento técnico y profesional.
+                div.title.col-xs-12.col-sm-5.row.middle-xs.end-xs#projects
+                    img.to-svg(src="images/projects.svg")
+                    h2 PROYECTOS
+                div.section-slide.col-xs-12
+                    div.slide-wrapper
+                        div.responsive-container.row.center-xs
+                            div.slider(style="padding: 0 10%;")
+                                div.slide
+                                    div.row.center-xs.middle-xs.between-xs( data-in="fade")
+                                        div.content-image.col-xs-12.col-sm-6.center-xs
+                                            img(src="images/logo.png")
+                                        div.col-xs-12.col-sm-6.text-slide
+                                            p Proyecto de vivienda familiar, es un espacio armónico para tu hogar, con la mejor ubicación en la Ciudad de Duitama.
+                                            div.link
+                                                span Conócelo </br>
+                                                a(href="#") www.mandalaedificio.com
+                                div.slide
+                                    div.row.center-xs.middle-xs.between-xs( data-in="fade")
+                                        div.content-image.col-xs-12.col-sm-6.center-xs
+                                            img(src="images/logo.png")
+                                        div.col-xs-12.col-sm-6.text-slide
+                                            p Proyecto de vivienda familiar, es un espacio armónico para tu hogar, con la mejor ubicación en la Ciudad de Duitama.
+                                            div.link
+                                                span Conócelo </br>
+                                                a(href="#") www.mandalaedificio.com
+                footer#contact.row.center-xs.middle-xs
+                    div.logo-footer.col-xs-12.col-sm-1
+                        img(src="images/logo__coeri__2.svg")
+                    div.contact-data.col-xs-12.col-sm-4
+                        h5 CONTACTOS
+                        p 3104562395 - 318 6257412 </br>
+                        p Calle 15 No - 43-67 Oficina 304
+                        p Colombia
+                        div.icon-social.row.start-xs
+                            a(href="").face
+                                img.to-svg(src="images/icon-facebook.svg")
+                            a(href="").twitter
+                                img.to-svg(src="images/icon-twitter.svg")
+                    div.form.col-xs-12.col-sm-7
+                        form.row
+                            div.col-xs-12.col-sm-4
+                                input(type="text" placeholder="Nombre")
+                                input(type="text" placeholder="Correo")
+                            div.col-xs-12.col-sm-8.row
+                                textarea(placeholder="Comentario")
+                                button(type="submit") ENVIAR
+            div.btn-up
+                a(onclick="$('body').animatescroll();") 
+                    img.to-svg(src="images/up-arrow.svg") 
+
+        script(src="vendor/fractionslider/jquery.fractionslider.js")
+        script(src="vendor/animatescroll.min.js")
+        script(src="vendor/vivus.js")
+
+        script(src="js/main.js")
+
+
